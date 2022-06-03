@@ -1,4 +1,4 @@
-package com.pokemon.pokemonapi.pokemondata;
+package com.pokemon.pokemonapi.pokemon;
 
 import java.util.Optional;
 
@@ -28,7 +28,7 @@ public class PokemonService {
         if (foundPokemon.isPresent()) {
             Pokemon updatedPokemon = foundPokemon.get();
             updatedPokemon.setName(pokemon.getName());
-            updatedPokemon.setImageurl(pokemon.getImageurl());
+            updatedPokemon.setImageUrl(pokemon.getImageUrl());
 
             pokemonRepository.save(updatedPokemon);
             return Optional.of(updatedPokemon);

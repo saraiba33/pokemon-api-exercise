@@ -1,4 +1,4 @@
-package com.pokemon.pokemonapi.pokemondata;
+package com.pokemon.pokemonapi.pokemon;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table(name = "pokemondata")
+@Table(name = "pokemon_data")
 public class Pokemon {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -20,6 +20,6 @@ public class Pokemon {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "imageurl")
-    private String imageurl;
+    @Column(name = "image_url")
+    private String imageUrl;
 }

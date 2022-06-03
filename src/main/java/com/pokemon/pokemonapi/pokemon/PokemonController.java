@@ -1,4 +1,4 @@
-package com.pokemon.pokemonapi.pokemondata;
+package com.pokemon.pokemonapi.pokemon;
 
 import java.util.Map;
 import java.util.HashMap;
