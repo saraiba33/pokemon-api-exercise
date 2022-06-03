@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS pokemon;
 
-CREATE TABLE pokemondata(
+CREATE TABLE pokemon(
     id serial PRIMARY KEY,
     name VARCHAR(255),
     imageurl TEXT UNIQUE
