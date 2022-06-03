@@ -3,10 +3,10 @@ DROP TABLE IF EXISTS pokemon;
 CREATE TABLE pokemon(
     id serial PRIMARY KEY,
     name VARCHAR(255),
-    imageurl TEXT UNIQUE
+    image_url TEXT UNIQUE
 );
 
-INSERT INTO pokemon (id, name, imageurl) VALUES (
+INSERT INTO pokemon (id, name, image_url) VALUES (
 '1', 'balbasaur', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png'
 ),(
 '2', 'ivysaur', 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png'
