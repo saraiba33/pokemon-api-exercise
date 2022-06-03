@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin
 @RestController
-@RequestMapping("api/pokemons")
+@RequestMapping("api/pokemon")
 public class PokemonController {
     @Autowired
     private PokemonService pokemonService;
@@ -67,14 +67,14 @@ public class PokemonController {
 
     private Map<String, Pokemon> createHashSingular(Pokemon pokemon) {
         Map<String, Pokemon> response = new HashMap<String, Pokemon>();
-        response.put("someResource", pokemon);
+        response.put("pokemon", pokemon);
 
         return response;
     }
 
     private Map<String, Iterable<Pokemon>> createHashPlural(Iterable<Pokemon> pokemons) {
         Map<String, Iterable<Pokemon>> response = new HashMap<String, Iterable<Pokemon>>();
-        response.put("pokemons", pokemons);
+        response.put("results", pokemons);
 
         return response;
     }
